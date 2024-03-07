@@ -1,0 +1,204 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../static/font/Roboto-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../static/font/Roboto-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../static/font/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Desktop version */
+
+body {
+    background: white;
+    color: #323232;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: #00a4d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+header * {
+    display: inline;
+    margin: auto auto;
+}
+
+header li {
+    margin: 0 8px;
+}
+
+nav select {
+    display: none;
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #0c6c8c;
+    line-height: 0;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px 0 12px 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0 0 0;
+
+}
+
+h3 {
+    color: #0c6c8c;
+    font-size: 19;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+h4 {
+    font-size: 15px;
+    color: #00a4d9;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+    padding: 0;
+    margin: 2px auto 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-inline-start: 0;
+    list-style-position: inside;
+}
+
+.main-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 0;
+    margin:0 10% 40px 5% ;
+}
+
+.m-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 0; 
+    align-items: flex-start;
+}
+
+.m-grid:nth-child(2) {
+    padding: 0 0 0 7px;
+    margin: 0; 
+} 
+
+.image-profile {
+    padding: 9px 0 0 0 ;
+    width: 60px;
+}
+
+.c-info {
+    line-height: 1;
+    font-size: 13px;
+    vertical-align: top;
+    margin: 0;
+    padding: 0 0 3px 0;
+}
+
+article {
+    margin: 40px 10% 10px 15%;
+    text-align: justify;
+}
+
+.bullet li {
+    list-style-image: url(bullet.svg);
+} 
+
+/* Mobile version */
+
+@media only screen and (max-width: 780px) {
+    body {
+        margin-top: 30px;
+    }
+    
+    header {
+        display: none;
+    }
+
+    ul {
+        padding: 0 1rem 0.5rem 1rem;
+        }
+
+    article {
+        margin: 10px 10% 10px 15%;
+        text-align: justify;
+    }
+}
+
+/* Print version */
+
+@media print and (max-width: 2800px){
+    body {
+        margin-top: 10px;
+    }
+
+    #skills {
+        margin-top: 200px;
+    }
+
+    header {
+        display: none;
+    }
+ }
